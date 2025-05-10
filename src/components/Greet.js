@@ -4,6 +4,14 @@ import React from "react";
 //     return <h1>Hello Pratik</h1>
 // }
 
-const Greet = () => <h1>Hello Pratik from arrow function</h1>
+const Greet = (props) => { 
+console.log(props);
+return (
+    <div>
+    <h1>Hello {props.name} from arrow function and with Batting Style as {props.battingStyle}</h1>
+    {props.children}
+    </div>
+)
+}
 
 export default Greet;
